@@ -8,6 +8,7 @@ Feature: Acceptance Function testing for Simple Application.
     When get "/employee"
     Then verify the list of result and http status code is 200
 
+
   Scenario Outline: get specify employee by id.
     When get "/employee/<ID>"
     Then the employee status code is 200 and employ name "<Name>"
