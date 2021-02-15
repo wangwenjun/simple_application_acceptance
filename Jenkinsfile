@@ -15,7 +15,7 @@ pipeline{
         }
         stage("Clone source code"){
             steps{
-                git 'git@github.com:wangwenjun/cicd.git'
+                git branch: 'master', url: 'git@github.com:wangwenjun/simple_application_acceptance.git'
             }
         }
 
