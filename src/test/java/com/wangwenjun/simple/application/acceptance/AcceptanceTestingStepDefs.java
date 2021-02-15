@@ -48,15 +48,16 @@ public class AcceptanceTestingStepDefs implements En {
       response.statusCode(is(200)).body("name", is(equalTo(name)));
     });
 
-    Given("The name is {string},address is {string} and remark is {string}", (String name, String address, String remark) ->
-    {
-      createPayload.clear();
-      createPayload.put("name", name);
-      createPayload.put("address", address);
-      createPayload.put("remark", remark);
-      createPayload.put("createdAt", "2021-02-15");
-      createPayload.put("updatedAt", "2021-02-15");
-    });
+    Given("The name is {string},address is {string} and remark is {string}",
+            (String name, String address, String remark) ->
+            {
+              createPayload.clear();
+              createPayload.put("name", name);
+              createPayload.put("address", address);
+              createPayload.put("remark", remark);
+              createPayload.put("createdAt", "2021-02-15");
+              createPayload.put("updatedAt", "2021-02-15");
+            });
 
     Given("Create new Employee Alice by uri {string}", (String uri) ->
     {

@@ -19,9 +19,7 @@ pipeline{
             }
         }
 
-
-
-        stage("Function Test"){
+        stage("Acceptance Test for Simple Application"){
             steps{
                 sh 'mvn test "-Dtest=*Runner"'
             }
