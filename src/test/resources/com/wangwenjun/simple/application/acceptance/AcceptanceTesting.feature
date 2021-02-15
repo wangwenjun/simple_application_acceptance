@@ -1,5 +1,5 @@
 @acceptance
-Feature: Acceptance Function testing for Simple Application
+Feature: Acceptance Function testing for Simple Application.
 
   Background: give the simple application url and port
     Given use the url "http://192.168.88.9" and port 18231
