@@ -18,7 +18,6 @@ Feature: Acceptance Function testing for Simple Application.
       | 2  | Tina |
       | 3  | Jack |
 
-
   Scenario: delete the specify employee
   but should create the new one first.
     Given The name is "Alice",address is "UK" and remark is "Alice Remark"
